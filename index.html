@@ -9,6 +9,12 @@
   <script type="module" src="node_modules/j-elements/elements.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  j-card::part(content) {
+    display: flex;
+    align-items: center;
+  }
+  </style>
 </head>
 
 <body>
@@ -16,7 +22,8 @@
     <a-avataaar identifier="john.doe@example.com"></a-avataaar>john.doe@example.com
   </j-card>
   <j-card>
-    <a-avataaar identifier=""></a-avataaar> <vaadin-text-field id="input" value="Your name"></vaadin-text-field>
+    <a-avataaar identifier=""></a-avataaar>
+    <vaadin-text-field id="input" value="Your name"></vaadin-text-field>
   </j-card>
   <script>
     const field = document.querySelector("#input");
