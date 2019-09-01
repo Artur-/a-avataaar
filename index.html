@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-    <script type="module" src="./demo/vaadin-team.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
 
-  <body>
-    <vaadin-team></vaadin-team>
-  </body>
-</html>
+<head>
+  <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+  <script type="module" src="./src/a-avataaar.js"></script>
+  <script type="module" src="node_modules/@vaadin/vaadin-text-field/vaadin-text-field.js"></script>
+  <script type="module" src="node_modules/j-elements/elements.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  j-card::part(content) {
+    display: flex;
+    align-items: center;
+  }
+  </style>
+</head>
+
+<body>
+  <j-card>
+    <span slot="header">john.doe@example.com</span>
+    <a-avataaar identifier="john.doe@example.com"></a-avataaar>
+  </j-card>
+  <j-card>
+    <a-avataaar id="avataaar" identifier="Your name"></a-avataaar>
+    <vaadin-text-field id="input" value="Your name" slot="header"></vaadin-text-field>
+  </j-card>
+  <script>
+    const field = document.querySelector("#input");
+    field.addEventListener("value-changed", e => {
+      document.querySelector("#avataaar").setAttribute("identifier", field.value);
+    });
+  </script>
+</body>

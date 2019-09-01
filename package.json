@@ -10,10 +10,10 @@
   "author": "Artur Signell",
   "license": "Apache-2.0",
   "dependencies": {
-    "@webcomponents/webcomponentsjs": "latest",
     "lit-element": "^2.2.1"
   },
   "devDependencies": {
+    "@webcomponents/webcomponentsjs": "latest",
     "@vaadin/vaadin": "^14.0.1",
     "j-elements": "^0.2.1"
   }
