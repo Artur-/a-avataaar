@@ -1,34 +1,14 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script type="module" src="./demo/vaadin-team.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-<head>
-  <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-  <script type="module" src="./src/a-avataaar.js"></script>
-  <script type="module" src="node_modules/@vaadin/vaadin-text-field/vaadin-text-field.js"></script>
-  <script type="module" src="node_modules/j-elements/elements.js"></script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-  j-card::part(content) {
-    display: flex;
-    align-items: center;
-  }
-  </style>
-</head>
-
-<body>
-  <j-card>
-    <a-avataaar identifier="john.doe@example.com"></a-avataaar>john.doe@example.com
-  </j-card>
-  <j-card>
-    <a-avataaar identifier=""></a-avataaar>
-    <vaadin-text-field id="input" value="Your name"></vaadin-text-field>
-  </j-card>
-  <script>
-    const field = document.querySelector("#input");
-    field.addEventListener("value-changed", e => {
-      field.previousElementSibling.setAttribute("identifier", field.value);
-    });
-  </script>
-</body>
+  <body>
+    <vaadin-team></vaadin-team>
+  </body>
+</html>

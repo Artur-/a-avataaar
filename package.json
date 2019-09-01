@@ -11,7 +11,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@webcomponents/webcomponentsjs": "latest",
-    "lit-element": "latest"
+    "lit-element": "^2.2.1"
   },
   "devDependencies": {
     "@vaadin/vaadin": "^14.0.1",

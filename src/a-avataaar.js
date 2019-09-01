@@ -202,7 +202,7 @@ class AAvataaar extends LitElement {
   }
   static get styles() {
     return css`
-      svg {
+      :host {
         width: 64px;
       }
     `;
@@ -280,14 +280,14 @@ class AAvataaar extends LitElement {
                     mask='url(#mask-silhouette)'
                   />
                 </g>
-                <image href="src/assets/clothes/${this.clotheType}.svg" ></image>
-                <image href="src/assets/eyebrow/${this.eyebrowType}.svg" ></image>
-                <image href="src/assets/eyes/${this.eyeType}.svg" ></image>
-                <image href="src/assets/mouth/${this.mouthType}.svg" ></image>
-                <image href="src/assets/nose/${this.noseType}.svg" ></image>
-                <image href="src/assets/top/${this.topType}.svg" ></image>
-                <image href="src/assets/top/accessories/${this.accessoriesType}.svg" ></image>
-                <image href="src/assets/top/facialHair/${this.facialHairType}.svg" ></image>
+                <image width="280" height="280" href="src/assets/clothes/${this.clotheType}.svg" ></image>
+                <image width="280" height="280" href="src/assets/eyebrow/${this.eyebrowType}.svg" ></image>
+                <image width="280" height="280" href="src/assets/eyes/${this.eyeType}.svg" ></image>
+                <image width="280" height="280" href="src/assets/mouth/${this.mouthType}.svg" ></image>
+                <image width="280" height="280" href="src/assets/nose/${this.noseType}.svg" ></image>
+                <image width="280" height="280" href="src/assets/top/${this.topType}.svg" ></image>
+                <image width="280" height="280" href="src/assets/top/accessories/${this.accessoriesType}.svg" ></image>
+                <image width="280" height="280" href="src/assets/top/facialHair/${this.facialHairType}.svg" ></image>
               </g>
             </g>
           </g>
