@@ -3,7 +3,8 @@
   "version": "1.0.1",
   "description": "Web component integration of getavataaars.com",
   "repository": "https://github.com/Artur-/a-avataaar",
-  "main": "a-avataaar.js",
+  "main": "src/a-avataaar.js",
+  "module": "src/a-avataaar.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
