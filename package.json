@@ -1,6 +1,6 @@
 {
   "name": "a-avataaar",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Web component integration of getavataaars.com",
   "repository": "https://github.com/Artur-/a-avataaar",
   "main": "dist/a-avataaar.js",
