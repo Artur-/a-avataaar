@@ -209,6 +209,7 @@ class AAvataaar extends LitElement {
   static get styles() {
     return css`
       :host {
+        display: inline-block;
         width: 64px;
       }
     `;
