@@ -16,6 +16,7 @@
   "devDependencies": {
     "@webcomponents/webcomponentsjs": "latest",
     "@vaadin/vaadin": "^14.0.1",
+    "github-corner": "^2.0.3",
     "j-elements": "^0.2.1"
   }
 }
