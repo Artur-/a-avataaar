@@ -3,8 +3,8 @@
   "version": "1.0.2",
   "description": "Web component integration of getavataaars.com",
   "repository": "https://github.com/Artur-/a-avataaar",
-  "main": "src/a-avataaar.js",
-  "module": "src/a-avataaar.js",
+  "main": "dist/a-avataaar.js",
+  "module": "dist/a-avataaar.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,9 +14,11 @@
     "lit-element": "^2.2.1"
   },
   "devDependencies": {
-    "@webcomponents/webcomponentsjs": "latest",
     "@vaadin/vaadin": "^14.0.1",
+    "@webcomponents/webcomponentsjs": "latest",
     "github-corner": "^2.0.3",
-    "j-elements": "^0.2.1"
+    "j-elements": "^0.2.1",
+    "svg-to-dataurl": "^1.0.0",
+    "svgo": "^1.3.0"
   }
 }

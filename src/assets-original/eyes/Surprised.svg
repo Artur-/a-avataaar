@@ -1,0 +1,24 @@
+<svg width='280px' height='280px' viewBox='0 0 280 280' version='1.1' xmlns='http://www.w3.org/2000/svg'>
+  <g transform='translate(76.000000, 82.000000)'>
+      <g id='Eyes/Surprised-😳' transform='translate(0.000000, 8.000000)'>
+        <circle id='The-White-Stuff' fill='#FFFFFF' cx='30' cy='22' r='14' />
+        <circle id='Eye-Ball' fill='#FFFFFF' cx='82' cy='22' r='14' />
+        <circle
+          class='CustomColor'
+          opacity='0.699999988'
+          fill='#000000'
+          cx='30'
+          cy='22'
+          r='6'
+        />
+        <circle
+          class='CustomColor'
+          opacity='0.699999988'
+          fill='#000000'
+          cx='82'
+          cy='22'
+          r='6'
+        />
+      </g>
+    </g>
+</svg>

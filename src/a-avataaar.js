@@ -3,54 +3,55 @@ import Random from "./random.js";
 
 class AAvataaar extends LitElement {
   static get topTypes() {
-    return [
-      "NoHair",
-      "Eyepatch",
-      "Hat",
-      "Hijab",
-      "Turban",
-      "WinterHat1",
-      "WinterHat2",
-      "WinterHat3",
-      "WinterHat4",
-      "LongHairBigHair",
-      "LongHairBob",
-      "LongHairBun",
-      "LongHairCurly",
-      "LongHairCurvy",
-      "LongHairDreads",
-      "LongHairFrida",
-      "LongHairFro",
-      "LongHairFroBand",
-      "LongHairNotTooLong",
-      "LongHairShavedSides",
-      "LongHairMiaWallace",
-      "LongHairStraight",
-      "LongHairStraight2",
-      "LongHairStraightStrand",
-      "ShortHairDreads01",
-      "ShortHairDreads02",
-      "ShortHairFrizzle",
-      "ShortHairShaggyMullet",
-      "ShortHairShortCurly",
-      "ShortHairShortFlat",
-      "ShortHairShortRound",
-      "ShortHairShortWaved",
-      "ShortHairSides",
-      "ShortHairTheCaesar",
-      "ShortHairTheCaesarSidePart"
-    ];
+    return {
+      NoHair: "src/assets/top/NoHair.svg",
+      Eyepatch: "src/assets/top/Eyepatch.svg",
+      Hat: "src/assets/top/Hat.svg",
+      Hijab: "src/assets/top/Hijab.svg",
+      Turban: "src/assets/top/Turban.svg",
+      WinterHat1: "src/assets/top/WinterHat1.svg",
+      WinterHat2: "src/assets/top/WinterHat2.svg",
+      WinterHat3: "src/assets/top/WinterHat3.svg",
+      WinterHat4: "src/assets/top/WinterHat4.svg",
+      LongHairBigHair: "src/assets/top/LongHairBigHair.svg",
+      LongHairBob: "src/assets/top/LongHairBob.svg",
+      LongHairBun: "src/assets/top/LongHairBun.svg",
+      LongHairCurly: "src/assets/top/LongHairCurly.svg",
+      LongHairCurvy: "src/assets/top/LongHairCurvy.svg",
+      LongHairDreads: "src/assets/top/LongHairDreads.svg",
+      LongHairFrida: "src/assets/top/LongHairFrida.svg",
+      LongHairFro: "src/assets/top/LongHairFro.svg",
+      LongHairFroBand: "src/assets/top/LongHairFroBand.svg",
+      LongHairNotTooLong: "src/assets/top/LongHairNotTooLong.svg",
+      LongHairShavedSides: "src/assets/top/LongHairShavedSides.svg",
+      LongHairMiaWallace: "src/assets/top/LongHairMiaWallace.svg",
+      LongHairStraight: "src/assets/top/LongHairStraight.svg",
+      LongHairStraight2: "src/assets/top/LongHairStraight2.svg",
+      LongHairStraightStrand: "src/assets/top/LongHairStraightStrand.svg",
+      ShortHairDreads01: "src/assets/top/ShortHairDreads01.svg",
+      ShortHairDreads02: "src/assets/top/ShortHairDreads02.svg",
+      ShortHairFrizzle: "src/assets/top/ShortHairFrizzle.svg",
+      ShortHairShaggyMullet: "src/assets/top/ShortHairShaggyMullet.svg",
+      ShortHairShortCurly: "src/assets/top/ShortHairShortCurly.svg",
+      ShortHairShortFlat: "src/assets/top/ShortHairShortFlat.svg",
+      ShortHairShortRound: "src/assets/top/ShortHairShortRound.svg",
+      ShortHairShortWaved: "src/assets/top/ShortHairShortWaved.svg",
+      ShortHairSides: "src/assets/top/ShortHairSides.svg",
+      ShortHairTheCaesar: "src/assets/top/ShortHairTheCaesar.svg",
+      ShortHairTheCaesarSidePart:
+        "src/assets/top/ShortHairTheCaesarSidePart.svg"
+    };
   }
   static get accessoriesTypes() {
-    return [
-      "Blank",
-      "Kurt",
-      "Prescription01",
-      "Prescription02",
-      "Round",
-      "Sunglasses",
-      "Wayfarers"
-    ];
+    return {
+      Blank: "src/assets/top/accessories/Blank.svg",
+      Kurt: "src/assets/top/accessories/Kurt.svg",
+      Prescription01: "src/assets/top/accessories/Prescription01.svg",
+      Prescription02: "src/assets/top/accessories/Prescription02.svg",
+      Round: "src/assets/top/accessories/Round.svg",
+      Sunglasses: "src/assets/top/accessories/Sunglasses.svg",
+      Wayfarers: "src/assets/top/accessories/Wayfarers.svg"
+    };
   }
   static get hairColors() {
     return [
@@ -67,76 +68,76 @@ class AAvataaar extends LitElement {
     ];
   }
   static get facialHairTypes() {
-    return [
-      "Blank",
-      "BeardMedium",
-      "BeardLight",
-      "BeardMajestic",
-      "MoustacheFancy",
-      "MoustacheMagnum"
-    ];
+    return {
+      Blank: "src/assets/top/facialHair/Blank.svg",
+      BeardMedium: "src/assets/top/facialHair/BeardMedium.svg",
+      BeardLight: "src/assets/top/facialHair/BeardLight.svg",
+      BeardMajestic: "src/assets/top/facialHair/BeardMajestic.svg",
+      MoustacheFancy: "src/assets/top/facialHair/MoustacheFancy.svg",
+      MoustacheMagnum: "src/assets/top/facialHair/MoustacheMagnum.svg"
+    };
   }
   static get clotheTypes() {
-    return [
-      "BlazerShirt",
-      "BlazerSweater",
-      "CollarSweater",
-      "GraphicShirt",
-      "Hoodie",
-      "Overall",
-      "ShirtCrewNeck",
-      "ShirtScoopNeck",
-      "ShirtVNeck"
-    ];
+    return {
+      BlazerShirt: "src/assets/clothes/BlazerShirt.svg",
+      BlazerSweater: "src/assets/clothes/BlazerSweater.svg",
+      CollarSweater: "src/assets/clothes/CollarSweater.svg",
+      GraphicShirt: "src/assets/clothes/GraphicShirt.svg",
+      Hoodie: "src/assets/clothes/Hoodie.svg",
+      Overall: "src/assets/clothes/Overall.svg",
+      ShirtCrewNeck: "src/assets/clothes/ShirtCrewNeck.svg",
+      ShirtScoopNeck: "src/assets/clothes/ShirtScoopNeck.svg",
+      ShirtVNeck: "src/assets/clothes/ShirtVNeck.svg"
+    };
   }
   static get eyeTypes() {
-    return [
-      "Close",
-      "Cry",
-      "Default",
-      "Dizzy",
-      "EyeRoll",
-      "Happy",
-      "Hearts",
-      "Side",
-      "Squint",
-      "Surprised",
-      "Wink",
-      "WinkWacky"
-    ];
+    return {
+      Close: "src/assets/eyes/Close.svg",
+      Cry: "src/assets/eyes/Cry.svg",
+      Default: "src/assets/eyes/Default.svg",
+      Dizzy: "src/assets/eyes/Dizzy.svg",
+      EyeRoll: "src/assets/eyes/EyeRoll.svg",
+      Happy: "src/assets/eyes/Happy.svg",
+      Hearts: "src/assets/eyes/Hearts.svg",
+      Side: "src/assets/eyes/Side.svg",
+      Squint: "src/assets/eyes/Squint.svg",
+      Surprised: "src/assets/eyes/Surprised.svg",
+      Wink: "src/assets/eyes/Wink.svg",
+      WinkWacky: "src/assets/eyes/WinkWacky.svg"
+    };
   }
   static get eyebrowTypes() {
-    return [
-      "Angry",
-      "AngryNatural",
-      "Default",
-      "DefaultNatural",
-      "FlatNatural",
-      "FrownNatural",
-      "RaisedExcited",
-      "RaisedExcitedNatural",
-      "SadConcerned",
-      "SadConcernedNatural",
-      "UnibrowNatural",
-      "UpDown",
-      "UpDownNatural"
-    ];
+    return {
+      Angry: "src/assets/eyebrow/Angry.svg",
+      AngryNatural: "src/assets/eyebrow/AngryNatural.svg",
+      Default: "src/assets/eyebrow/Default.svg",
+      DefaultNatural: "src/assets/eyebrow/DefaultNatural.svg",
+      FlatNatural: "src/assets/eyebrow/FlatNatural.svg",
+      FrownNatural: "src/assets/eyebrow/FrownNatural.svg",
+      RaisedExcited: "src/assets/eyebrow/RaisedExcited.svg",
+      RaisedExcitedNatural: "src/assets/eyebrow/RaisedExcitedNatural.svg",
+      SadConcerned: "src/assets/eyebrow/SadConcerned.svg",
+      SadConcernedNatural: "src/assets/eyebrow/SadConcernedNatural.svg",
+      UnibrowNatural: "src/assets/eyebrow/UnibrowNatural.svg",
+      UpDown: "src/assets/eyebrow/UpDown.svg",
+      UpDownNatural: "src/assets/eyebrow/UpDownNatural.svg"
+    };
   }
   static get mouthTypes() {
-    return [
-      "Concerned",
-      "Default",
-      "Disbelief",
-      "Eating",
-      "Grimace",
-      "Sad",
-      "ScreamOpen",
-      "Serious",
-      "Smile",
-      "Tongue",
-      "Twinkle",
-      "Vomit"
-    ];
+    return {
+      Concerned: "src/assets/mouth/Concerned.svg",
+      Default: "src/assets/mouth/Default.svg",
+      Disbelief: "src/assets/mouth/Disbelief.svg",
+      Eating: "src/assets/mouth/Eating.svg",
+      Grimace: "src/assets/mouth/Grimace.svg",
+      Sad: "src/assets/mouth/Sad.svg",
+      ScreamOpen: "src/assets/mouth/ScreamOpen.svg",
+      Serious: "src/assets/mouth/Serious.svg",
+      Smile: "src/assets/mouth/Smile.svg",
+      Tongue: "src/assets/mouth/Tongue.svg",
+      Twinkle: "src/assets/mouth/Twinkle.svg",
+      Vomit: "src/assets/mouth/Vomit.svg"
+    };
   }
   static get skinColors() {
     return ["Tanned", "Yellow", "Pale", "Light", "Brown", "DarkBrown", "Black"];
@@ -170,7 +171,12 @@ class AAvataaar extends LitElement {
     return hash >= 0 ? hash : -hash;
   }
 
-  randomOption(options) {
+  randomOption(optionMap) {
+    const options = Object.values(optionMap);
+    const index = this.random.nextInt(0, options.length);
+    return options[index];
+  }
+  randomArrayOption(options) {
     const index = this.random.nextInt(0, options.length);
     return options[index];
   }
@@ -180,16 +186,16 @@ class AAvataaar extends LitElement {
     const identifierSeed = this.hash(identifier);
     this.random = new Random(identifierSeed);
 
-    this.noseType = "Default";
+    this.noseType = "src/assets/nose/Default.svg";
     this.topType = this.randomOption(AAvataaar.topTypes);
     this.accessoriesType = this.randomOption(AAvataaar.accessoriesTypes);
-    this.hairColor = this.randomOption(AAvataaar.hairColors);
+    this.hairColor = this.randomArrayOption(AAvataaar.hairColors);
     this.facialHairType = this.randomOption(AAvataaar.facialHairTypes);
     this.clotheType = this.randomOption(AAvataaar.clotheTypes);
     this.eyeType = this.randomOption(AAvataaar.eyeTypes);
     this.eyebrowType = this.randomOption(AAvataaar.eyebrowTypes);
     this.mouthType = this.randomOption(AAvataaar.mouthTypes);
-    this.skinColor = this.randomOption(AAvataaar.skinColors);
+    this.skinColor = this.randomArrayOption(AAvataaar.skinColors);
   }
 
   get identifier() {
@@ -280,14 +286,14 @@ class AAvataaar extends LitElement {
                     mask='url(#mask-silhouette)'
                   />
                 </g>
-                <image width="280" height="280" href="src/assets/clothes/${this.clotheType}.svg" ></image>
-                <image width="280" height="280" href="src/assets/eyebrow/${this.eyebrowType}.svg" ></image>
-                <image width="280" height="280" href="src/assets/eyes/${this.eyeType}.svg" ></image>
-                <image width="280" height="280" href="src/assets/mouth/${this.mouthType}.svg" ></image>
-                <image width="280" height="280" href="src/assets/nose/${this.noseType}.svg" ></image>
-                <image width="280" height="280" href="src/assets/top/${this.topType}.svg" ></image>
-                <image width="280" height="280" href="src/assets/top/accessories/${this.accessoriesType}.svg" ></image>
-                <image width="280" height="280" href="src/assets/top/facialHair/${this.facialHairType}.svg" ></image>
+                <image width="280" height="280" href="${this.clotheType}" ></image>
+                <image width="280" height="280" href="${this.eyebrowType}" ></image>
+                <image width="280" height="280" href="${this.eyeType}" ></image>
+                <image width="280" height="280" href="${this.mouthType}" ></image>
+                <image width="280" height="280" href="${this.noseType}" ></image>
+                <image width="280" height="280" href="${this.topType}" ></image>
+                <image width="280" height="280" href="${this.accessoriesType}" ></image>
+                <image width="280" height="280" href="${this.facialHairType}" ></image>
               </g>
             </g>
           </g>
