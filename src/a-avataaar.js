@@ -211,6 +211,7 @@ class AAvataaar extends LitElement {
       :host {
         display: inline-block;
         width: 64px;
+        --avataaar-circle-color: #65C9FF;
       }
     `;
   }
@@ -260,7 +261,7 @@ class AAvataaar extends LitElement {
                   <g
                     id='Color/Palette/Blue-01'
                     mask='url(#mask-1)'
-                    fill='#65C9FF'>
+                    fill='var(--avataaar-circle-color)'>
                     <rect id='🖍Color' x='0' y='0' width='240' height='240' />
                   </g>
                 </g>
