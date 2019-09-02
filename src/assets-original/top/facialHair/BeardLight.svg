@@ -13,7 +13,7 @@
         </mask>
         <use
           class='CustomColor'
-          fill='#331B0C'
+          fill='var(--avataaar-facial-hair-color)'
           fillRule='evenodd'
           href='#path1'
         />
