@@ -27,7 +27,7 @@
               </mask>
               <use
                 class='CustomColor'
-                fill='#2E3257'
+                fill='var(--avataaar-hair-color)'
                 href='#path3'
               />
             </g>

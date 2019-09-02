@@ -44,7 +44,7 @@
             <use
               class='CustomColor'
               stroke='none'
-              fill='#28354B'
+              fill='var(--avataaar-hair-color)'
               fillRule='evenodd'
               transform='translate(143.465161, 67.234158) scale(-1, 1) translate(-143.465161, -67.234158) '
               href='#path1'

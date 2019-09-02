@@ -56,7 +56,7 @@
             <mask id='mask2' fill='white'>
               <use href='#path1' />
             </mask>
-            <use class='CustomColor' fill='#D8D8D8' href='#path1' />
+            <use class='CustomColor' fill='var(--avataaar-hat-color)' href='#path1' />
             <mask id='mask3' fill='white'>
               <use href='#path2' />
             </mask>

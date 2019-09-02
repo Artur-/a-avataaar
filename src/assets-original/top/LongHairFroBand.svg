@@ -19,7 +19,7 @@
             <use
               class='CustomColor'
               stroke='none'
-              fill='#314756'
+              fill='var(--avataaar-hair-color)'
               fillRule='evenodd'
               href='#path2'
             />

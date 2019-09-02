@@ -43,7 +43,7 @@
             <use
               class='CustomColor'
               stroke='none'
-              fill='#E6E6E6'
+              fill='var(--avataaar-hat-color)'
               fillRule='evenodd'
               href='#path2'
             />

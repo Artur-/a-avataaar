@@ -33,7 +33,7 @@
               <mask id='mask2' fill='white'>
                 <use href='#path2' />
               </mask>
-              <use class='CustomColor' fill='#314756' href='#path2' />
+              <use class='CustomColor' fill='var(--avataaar-hair-color)' href='#path2' />
             </g>
           </g>
         </g>

@@ -45,7 +45,7 @@
             <mask id='mask2' fill='white'>
               <use href='#path1' />
             </mask>
-            <use class='CustomColor' fill='#F4F4F4' href='#path1' />
+            <use class='CustomColor' fill='var(--avataaar-hat-color)' href='#path1' />
             <HatColor maskID='mask2' defaultColor='Blue01' />
             <rect
               id='color-dark'
