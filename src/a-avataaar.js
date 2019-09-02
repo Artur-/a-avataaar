@@ -53,19 +53,38 @@ class AAvataaar extends LitElement {
       Wayfarers: "src/assets/top/accessories/Wayfarers.svg"
     };
   }
+  static get hatColors() {
+    return {
+      Black: "#262E33",
+      Blue01: "#65C9FF",
+      Blue02: "#5199E4",
+      Blue03: "#25557C",
+      Gray01: "##E6E6E6",
+      Gray02: "#929598",
+      Heather: "#3C4F5C",
+      PastelBlue: "#B1E2FF",
+      PastelGreen: "#A7FFC4",
+      PastelOrange: "#FFDEB5",
+      PastelRed: "#FFAFB9",
+      PastelYellow: "#FFFFB1",
+      Pink: "#FF488E",
+      Red: "#FF5C5C",
+      White: "#FFFFFF"
+    };
+  }
   static get hairColors() {
-    return [
-      "Auburn",
-      "Black",
-      "Blonde",
-      "BlondeGolden",
-      "Brown",
-      "BrownDark",
-      "PastelPink",
-      "Platinum",
-      "Red",
-      "SilverGray"
-    ];
+    return {
+      Auburn: "#A55728",
+      Black: "#2C1B18",
+      Blonde: "#B58143",
+      BlondeGolden: "#D6B370",
+      Brown: "#724133",
+      BrownDark: "#4A312C",
+      PastelPink: "#F59797",
+      Platinum: "#ECDCBF",
+      Red: "#C93305",
+      SilverGray: "#E8E1E1"
+    };
   }
   static get facialHairTypes() {
     return {
@@ -140,7 +159,15 @@ class AAvataaar extends LitElement {
     };
   }
   static get skinColors() {
-    return ["Tanned", "Yellow", "Pale", "Light", "Brown", "DarkBrown", "Black"];
+    return {
+      Tanned: "#FD9841",
+      Yellow: "#F8D25C",
+      Pale: "#FFDBB4",
+      Light: "#EDB98A",
+      Brown: "#D08B5B",
+      DarkBrown: "#AE5D29",
+      Black: "#614335"
+    };
   }
 
   static get properties() {
@@ -148,7 +175,6 @@ class AAvataaar extends LitElement {
       identifier: { type: String },
       topType: { type: String },
       accessoriesType: { type: String },
-      hairColor: { type: String },
       facialHairType: { type: String },
       clotheType: { type: String },
       eyeType: { type: String },
@@ -189,13 +215,27 @@ class AAvataaar extends LitElement {
     this.noseType = "src/assets/nose/Default.svg";
     this.topType = this.randomOption(AAvataaar.topTypes);
     this.accessoriesType = this.randomOption(AAvataaar.accessoriesTypes);
-    this.hairColor = this.randomArrayOption(AAvataaar.hairColors);
+    this.style.setProperty(
+      "--avataaar-hair-color",
+      this.randomOption(AAvataaar.hairColors)
+    );
     this.facialHairType = this.randomOption(AAvataaar.facialHairTypes);
     this.clotheType = this.randomOption(AAvataaar.clotheTypes);
     this.eyeType = this.randomOption(AAvataaar.eyeTypes);
     this.eyebrowType = this.randomOption(AAvataaar.eyebrowTypes);
     this.mouthType = this.randomOption(AAvataaar.mouthTypes);
-    this.skinColor = this.randomArrayOption(AAvataaar.skinColors);
+    this.style.setProperty(
+      "--avataaar-skin-color",
+      this.randomOption(AAvataaar.skinColors)
+    );
+    this.style.setProperty(
+      "--avataaar-facial-hair-color",
+      this.randomOption(AAvataaar.hairColors)
+    );
+    this.style.setProperty(
+      "--avataaar-hat-color",
+      this.randomOption(AAvataaar.hatColors)
+    );
   }
 
   get identifier() {
@@ -211,7 +251,7 @@ class AAvataaar extends LitElement {
       :host {
         display: inline-block;
         width: 64px;
-        --avataaar-circle-color: #65C9FF;
+        --avataaar-circle-color: #65c9ff;
       }
     `;
   }
@@ -278,8 +318,7 @@ class AAvataaar extends LitElement {
                   <mask id='mask-silhouette' fill='white'>
                     <use xlink:href='#path-silhouette' />
                   </mask>
-                  <use fill='#D0C6AC' xlink:href='#path-silhouette' />
-                 <!-- <Skin maskID='mask-silhouette' />-->
+                  <use fill='var(--avataaar-skin-color)' xlink:href='#path-silhouette' />
                   <path
                     d='M156,79 L156,102 C156,132.927946 130.927946,158 100,158 C69.072054,158 44,132.927946 44,102 L44,79 L44,94 C44,124.927946 69.072054,150 100,150 C130.927946,150 156,124.927946 156,94 L156,79 Z'
                     id='Neck-Shadow'
