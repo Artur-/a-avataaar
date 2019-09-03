@@ -210,6 +210,7 @@ class AAvataaar extends LitElement {
                 id='Avataaar'
                 stroke-width='1'
                 fill-rule='evenodd'
+                fill='black'
                 mask='url(#mask-2)'>
                 <g id='Body' transform='translate(32.000000, 36.000000)'>
                   <mask id='mask-silhouette' fill='white'>
