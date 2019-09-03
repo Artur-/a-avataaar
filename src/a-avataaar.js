@@ -1,59 +1,14 @@
 import { LitElement, css, svg } from "lit-element";
 import Random from "./random.js";
+import { accessoriesTypes } from "./accessories";
+import { facialHairTypes } from "./facial-hair";
+import { topTypes } from "./top";
+import { mouthTypes } from "./mouth";
+import { clothesType } from "./clothes";
+import { eyeTypes } from "./eyes";
+import { eyebrowTypes } from "./eyebrows";
 
-const assetsFolder = "src/assets/";
 class AAvataaar extends LitElement {
-  static get topTypes() {
-    return {
-      NoHair: assetsFolder + "top/NoHair.svg",
-      Eyepatch: assetsFolder + "top/Eyepatch.svg",
-      Hat: assetsFolder + "top/Hat.svg",
-      Hijab: assetsFolder + "top/Hijab.svg",
-      Turban: assetsFolder + "top/Turban.svg",
-      WinterHat1: assetsFolder + "top/WinterHat1.svg",
-      WinterHat2: assetsFolder + "top/WinterHat2.svg",
-      WinterHat3: assetsFolder + "top/WinterHat3.svg",
-      WinterHat4: assetsFolder + "top/WinterHat4.svg",
-      LongHairBigHair: assetsFolder + "top/LongHairBigHair.svg",
-      LongHairBob: assetsFolder + "top/LongHairBob.svg",
-      LongHairBun: assetsFolder + "top/LongHairBun.svg",
-      LongHairCurly: assetsFolder + "top/LongHairCurly.svg",
-      LongHairCurvy: assetsFolder + "top/LongHairCurvy.svg",
-      LongHairDreads: assetsFolder + "top/LongHairDreads.svg",
-      LongHairFrida: assetsFolder + "top/LongHairFrida.svg",
-      LongHairFro: assetsFolder + "top/LongHairFro.svg",
-      LongHairFroBand: assetsFolder + "top/LongHairFroBand.svg",
-      LongHairNotTooLong: assetsFolder + "top/LongHairNotTooLong.svg",
-      LongHairShavedSides: assetsFolder + "top/LongHairShavedSides.svg",
-      LongHairMiaWallace: assetsFolder + "top/LongHairMiaWallace.svg",
-      LongHairStraight: assetsFolder + "top/LongHairStraight.svg",
-      LongHairStraight2: assetsFolder + "top/LongHairStraight2.svg",
-      LongHairStraightStrand: assetsFolder + "top/LongHairStraightStrand.svg",
-      ShortHairDreads01: assetsFolder + "top/ShortHairDreads01.svg",
-      ShortHairDreads02: assetsFolder + "top/ShortHairDreads02.svg",
-      ShortHairFrizzle: assetsFolder + "top/ShortHairFrizzle.svg",
-      ShortHairShaggyMullet: assetsFolder + "top/ShortHairShaggyMullet.svg",
-      ShortHairShortCurly: assetsFolder + "top/ShortHairShortCurly.svg",
-      ShortHairShortFlat: assetsFolder + "top/ShortHairShortFlat.svg",
-      ShortHairShortRound: assetsFolder + "top/ShortHairShortRound.svg",
-      ShortHairShortWaved: assetsFolder + "top/ShortHairShortWaved.svg",
-      ShortHairSides: assetsFolder + "top/ShortHairSides.svg",
-      ShortHairTheCaesar: assetsFolder + "top/ShortHairTheCaesar.svg",
-      ShortHairTheCaesarSidePart:
-        assetsFolder + "top/ShortHairTheCaesarSidePart.svg"
-    };
-  }
-  static get accessoriesTypes() {
-    return {
-      Blank: assetsFolder + "top/accessories/Blank.svg",
-      Kurt: assetsFolder + "top/accessories/Kurt.svg",
-      Prescription01: assetsFolder + "top/accessories/Prescription01.svg",
-      Prescription02: assetsFolder + "top/accessories/Prescription02.svg",
-      Round: assetsFolder + "top/accessories/Round.svg",
-      Sunglasses: assetsFolder + "top/accessories/Sunglasses.svg",
-      Wayfarers: assetsFolder + "top/accessories/Wayfarers.svg"
-    };
-  }
   static get hatColors() {
     return {
       Black: "#262E33",
@@ -85,78 +40,6 @@ class AAvataaar extends LitElement {
       Platinum: "#ECDCBF",
       Red: "#C93305",
       SilverGray: "#E8E1E1"
-    };
-  }
-  static get facialHairTypes() {
-    return {
-      Blank: assetsFolder + "top/facialHair/Blank.svg",
-      BeardMedium: assetsFolder + "top/facialHair/BeardMedium.svg",
-      BeardLight: assetsFolder + "top/facialHair/BeardLight.svg",
-      BeardMajestic: assetsFolder + "top/facialHair/BeardMajestic.svg",
-      MoustacheFancy: assetsFolder + "top/facialHair/MoustacheFancy.svg",
-      MoustacheMagnum: assetsFolder + "top/facialHair/MoustacheMagnum.svg"
-    };
-  }
-  static get clotheTypes() {
-    return {
-      BlazerShirt: assetsFolder + "clothes/BlazerShirt.svg",
-      BlazerSweater: assetsFolder + "clothes/BlazerSweater.svg",
-      CollarSweater: assetsFolder + "clothes/CollarSweater.svg",
-      GraphicShirt: assetsFolder + "clothes/GraphicShirt.svg",
-      Hoodie: assetsFolder + "clothes/Hoodie.svg",
-      Overall: assetsFolder + "clothes/Overall.svg",
-      ShirtCrewNeck: assetsFolder + "clothes/ShirtCrewNeck.svg",
-      ShirtScoopNeck: assetsFolder + "clothes/ShirtScoopNeck.svg",
-      ShirtVNeck: assetsFolder + "clothes/ShirtVNeck.svg"
-    };
-  }
-  static get eyeTypes() {
-    return {
-      Close: assetsFolder + "eyes/Close.svg",
-      Cry: assetsFolder + "eyes/Cry.svg",
-      Default: assetsFolder + "eyes/Default.svg",
-      Dizzy: assetsFolder + "eyes/Dizzy.svg",
-      EyeRoll: assetsFolder + "eyes/EyeRoll.svg",
-      Happy: assetsFolder + "eyes/Happy.svg",
-      Hearts: assetsFolder + "eyes/Hearts.svg",
-      Side: assetsFolder + "eyes/Side.svg",
-      Squint: assetsFolder + "eyes/Squint.svg",
-      Surprised: assetsFolder + "eyes/Surprised.svg",
-      Wink: assetsFolder + "eyes/Wink.svg",
-      WinkWacky: assetsFolder + "eyes/WinkWacky.svg"
-    };
-  }
-  static get eyebrowTypes() {
-    return {
-      Angry: assetsFolder + "eyebrow/Angry.svg",
-      AngryNatural: assetsFolder + "eyebrow/AngryNatural.svg",
-      Default: assetsFolder + "eyebrow/Default.svg",
-      DefaultNatural: assetsFolder + "eyebrow/DefaultNatural.svg",
-      FlatNatural: assetsFolder + "eyebrow/FlatNatural.svg",
-      FrownNatural: assetsFolder + "eyebrow/FrownNatural.svg",
-      RaisedExcited: assetsFolder + "eyebrow/RaisedExcited.svg",
-      RaisedExcitedNatural: assetsFolder + "eyebrow/RaisedExcitedNatural.svg",
-      SadConcerned: assetsFolder + "eyebrow/SadConcerned.svg",
-      SadConcernedNatural: assetsFolder + "eyebrow/SadConcernedNatural.svg",
-      UnibrowNatural: assetsFolder + "eyebrow/UnibrowNatural.svg",
-      UpDown: assetsFolder + "eyebrow/UpDown.svg",
-      UpDownNatural: assetsFolder + "eyebrow/UpDownNatural.svg"
-    };
-  }
-  static get mouthTypes() {
-    return {
-      Concerned: assetsFolder + "mouth/Concerned.svg",
-      Default: assetsFolder + "mouth/Default.svg",
-      Disbelief: assetsFolder + "mouth/Disbelief.svg",
-      Eating: assetsFolder + "mouth/Eating.svg",
-      Grimace: assetsFolder + "mouth/Grimace.svg",
-      Sad: assetsFolder + "mouth/Sad.svg",
-      ScreamOpen: assetsFolder + "mouth/ScreamOpen.svg",
-      Serious: assetsFolder + "mouth/Serious.svg",
-      Smile: assetsFolder + "mouth/Smile.svg",
-      Tongue: assetsFolder + "mouth/Tongue.svg",
-      Twinkle: assetsFolder + "mouth/Twinkle.svg",
-      Vomit: assetsFolder + "mouth/Vomit.svg"
     };
   }
   static get skinColors() {
@@ -213,18 +96,31 @@ class AAvataaar extends LitElement {
     const identifierSeed = this.hash(identifier);
     this.random = new Random(identifierSeed);
 
-    this.noseType = assetsFolder + "nose/Default.svg";
-    this.topType = this.randomOption(AAvataaar.topTypes);
-    this.accessoriesType = this.randomOption(AAvataaar.accessoriesTypes);
+    this.noseType = svg`<g fill='black' transform='translate(76.000000, 82.000000)'>
+    <g
+      id='Nose/Default'
+      transform='translate(28.000000, 40.000000)'
+      opacity='0.16'>
+      <path
+        d='M16,8 C16,12.418278 21.372583,16 28,16 L28,16 C34.627417,16 40,12.418278 40,8'
+        id='Nose'
+      />
+    </g>
+</g>
+`;
+
+    this.topType = this.randomOption(topTypes);
+    this.accessoriesType = this.randomOption(accessoriesTypes);
+
     this.style.setProperty(
       "--avataaar-hair-color",
       this.randomOption(AAvataaar.hairColors)
     );
-    this.facialHairType = this.randomOption(AAvataaar.facialHairTypes);
-    this.clotheType = this.randomOption(AAvataaar.clotheTypes);
-    this.eyeType = this.randomOption(AAvataaar.eyeTypes);
-    this.eyebrowType = this.randomOption(AAvataaar.eyebrowTypes);
-    this.mouthType = this.randomOption(AAvataaar.mouthTypes);
+    this.facialHairType = this.randomOption(facialHairTypes);
+    this.clotheType = this.randomOption(clothesType);
+    this.eyeType = this.randomOption(eyeTypes);
+    this.eyebrowType = this.randomOption(eyebrowTypes);
+    this.mouthType = this.randomOption(mouthTypes);
     this.style.setProperty(
       "--avataaar-skin-color",
       this.randomOption(AAvataaar.skinColors)
@@ -328,14 +224,14 @@ class AAvataaar extends LitElement {
                     mask='url(#mask-silhouette)'
                   />
                 </g>
-                <image width="280" height="280" href="${this.clotheType}" ></image>
-                <image width="280" height="280" href="${this.eyebrowType}" ></image>
-                <image width="280" height="280" href="${this.eyeType}" ></image>
-                <image width="280" height="280" href="${this.mouthType}" ></image>
-                <image width="280" height="280" href="${this.noseType}" ></image>
-                <image width="280" height="280" href="${this.topType}" ></image>
-                <image width="280" height="280" href="${this.accessoriesType}" ></image>
-                <image width="280" height="280" href="${this.facialHairType}" ></image>
+                ${this.clotheType}
+                ${this.eyebrowType}
+                ${this.eyeType}
+                ${this.mouthType}
+                ${this.noseType}
+                ${this.topType}
+                ${this.accessoriesType}
+                ${this.facialHairType}
               </g>
             </g>
           </g>
