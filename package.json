@@ -5,6 +5,9 @@
   "repository": "https://github.com/Artur-/a-avataaar",
   "main": "src/a-avataaar.js",
   "module": "src/a-avataaar.js",
+  "files": [
+    "src/**"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
