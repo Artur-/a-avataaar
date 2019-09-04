@@ -6,11 +6,11 @@ whatever you want)
 # Usage example
 
 ```
-<a-avataar identifier="john@doe.com"></a-avataar>
+<a-avataar identifier="john.doe@example.com"></a-avataar>
 ```
 renders
 
-![johndoe](https://user-images.githubusercontent.com/260340/64098725-463dd780-cd70-11e9-8bd0-fa27e74f8ac3.png)
+![johndoe](https://user-images.githubusercontent.com/260340/64236108-669d9b80-cf02-11e9-9ddc-e548ee2174ce.png)
 
 
 ## Building and running the project
