@@ -15,7 +15,7 @@ class AAvataaar extends LitElement {
       Blue01: "#65C9FF",
       Blue02: "#5199E4",
       Blue03: "#25557C",
-      Gray01: "##E6E6E6",
+      Gray01: "#E6E6E6",
       Gray02: "#929598",
       Heather: "#3C4F5C",
       PastelBlue: "#B1E2FF",
@@ -148,7 +148,7 @@ class AAvataaar extends LitElement {
       :host {
         display: inline-block;
         width: 64px;
-        --avataaar-circle-color: #65c9ff;
+        --avataaar-internal-circle-color: var(--avataaar-circle-color, #6fb8e0);
       }
     `;
   }
@@ -198,7 +198,7 @@ class AAvataaar extends LitElement {
                   <g
                     id='Color/Palette/Blue-01'
                     mask='url(#mask-1)'
-                    fill='var(--avataaar-circle-color)'>
+                    fill='var(--avataaar-internal-circle-color)'>
                     <rect id='🖍Color' x='0' y='0' width='240' height='240' />
                   </g>
                 </g>
