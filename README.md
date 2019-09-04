@@ -20,6 +20,8 @@ npm install --save a-avataaar
 ![John Doe](https://user-images.githubusercontent.com/260340/64236491-31457d80-cf03-11e9-86d5-c49fec366afa.png)
 
 
+# For developers, not users, of this project
+
 ## Building and running the project
 
 ```
