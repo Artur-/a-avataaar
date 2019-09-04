@@ -1,4 +1,4 @@
-# a-avataar
+# a-avataaar
 
 A web component for showing an avatar based on a string (name, email,
 whatever you want)
