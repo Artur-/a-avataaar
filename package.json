@@ -18,7 +18,7 @@
     "lit-element": "^2.2.1"
   },
   "devDependencies": {
-    "@vaadin/vaadin": "^14.0.1",
+    "@vaadin/vaadin": "^24.0.5",
     "@webcomponents/webcomponentsjs": "latest",
     "github-corner": "^2.0.3",
     "j-elements": "^0.2.1",
